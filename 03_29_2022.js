@@ -10,3 +10,21 @@ function openOrSenior(data){
     }else newArray.push('Open')
     } return newArray
   }
+
+  // 6 kyu
+  // Multiples of 3 or 5
+
+
+
+  function solution(number){
+    let sum = 0
+  while (true){
+    number--
+    if (number<=0){
+      break
+    }else if (number%3==0||number%5==0){
+      sum+=number
+    }
+  } return sum  
+    
+  }
