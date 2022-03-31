@@ -15,3 +15,32 @@ function createPhoneNumber(numbers){
     return stringNumber
   }
 
+
+
+//   //5kyu!
+//   Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
+
+// Examples
+// pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
+// pigIt('Hello world !');     // elloHay orldway !
+
+function pigIt(str){
+    // convert to array
+    let strArray = str.split(' ')
+    let finalString=''
+    for (let element of strArray){
+        console.log(element[0])
+        let elementToArray = element.split('')
+        console.log(elementToArray)
+         if (elementToArray.length>1){
+             let firstLetter = elementToArray.shift()
+             elementToArray.push(firstLetter,'ay ')
+             finalString+=elementToArray.join('')
+             console.log(finalString)
+         }console.log(elementToArray)
+    }return finalString
+    //iterate over array
+    // shift and push 
+    
+    }
+    pigIt('Pig latin is cool')
