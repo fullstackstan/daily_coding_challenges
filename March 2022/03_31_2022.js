@@ -34,3 +34,45 @@ function anagrams(word, words) {
 }
 
 anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada'])
+
+////////////////////////////////////////////////
+
+// 5 kyu
+// String incrementer
+// Your job is to write a function which increments a string, to create a new string.
+
+// If the string already ends with a number, the number should be incremented by 1.
+// If the string does not end with a number. the number 1 should be appended to the new string.
+
+function incrementString (string) {
+    // return incrementedString
+//convertstring to array 
+let stringToArray = string.split('')
+console.log(stringToArray[stringToArray.length-1])
+//check end of array
+let numberArray = []
+while (true){
+    if (parseInt(stringToArray[stringToArray.length-1])>=0&&parseInt(stringToArray[stringToArray.length-1])<=9){
+    console.log(stringToArray)
+    numberArray.push(stringToArray.pop())
+    console.log(numberArray)
+}else break
+} let number = parseInt(numberArray.toString())
+number++
+let stringNumber = number.toString()
+
+stringNumber = stringNumber.padStart(numberArray.length,0)
+let finalNumberArray = stringNumber.split('')
+
+let finalArray = stringToArray.concat(finalNumberArray)
+console.log(finalArray)
+return finalArray
+}
+// 
+incrementString("foobar000")
+// 
+// 
+// 
+// 
+// 
+
