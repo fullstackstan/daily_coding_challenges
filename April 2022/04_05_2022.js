@@ -14,3 +14,27 @@ function likes(names) {
         return `${names[0]}, ${names[1]} and ${names.length-2} others like this`
     }
   }
+
+
+//   5 kyu
+// Human Readable Time
+
+function humanReadable (seconds) {
+    let hours = 0
+    let minutes = 0
+    let workingSeconds = seconds
+    while (seconds>60){
+    if (seconds>=60){
+        
+        minutes++
+        seconds-=60
+        if (minutes==60){
+            hours++
+            minutes=0
+        }
+         
+    } 
+}return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`
+  }
+
+  humanReadable(45)
