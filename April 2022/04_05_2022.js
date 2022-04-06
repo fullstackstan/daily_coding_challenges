@@ -38,3 +38,36 @@ function humanReadable (seconds) {
   }
 
   humanReadable(45)
+
+//   4 kyu
+//   Human readable duration format
+
+  function humanReadable (seconds) {
+    let hours = 0
+    let minutes = 0
+    let days = 0
+    let years = 0
+    if (seconds==0){
+        return `now`
+    }
+    while (seconds>=60){
+    if (seconds>=60){   
+        minutes++
+        seconds-=60
+    if (minutes==60){
+            hours++
+            minutes=0
+    if (hours==24){
+        days++
+        hours-=24
+    if (days==365){
+        years++
+        days-=365
+    }
+    }
+        }  
+    } 
+}if (years){return ``}
+  }
+
+  ///ummm 4ky is spicy on the returns :)  going to take a break.
