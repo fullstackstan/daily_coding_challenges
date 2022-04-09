@@ -62,3 +62,26 @@ function towerBuilder(nFloors) {
     
     return tower;
   }
+
+  /////////////////////
+
+  function highestRank(arr){
+    let obj = {}
+    arr.forEach(element => {
+        if(!obj[element]){
+            obj[element]=1
+        } else {
+            obj[element]+=1
+        }
+        let highestValue = 0
+        let highestValueKey = -Infinity
+        for (let key in obj){
+            if(obj[key]>highestValue){
+                highestValue = obj[key]
+                highestValueKey = key
+            }
+        }
+    });
+    return (highestValueKey)
+}
+///did not work. try again.
