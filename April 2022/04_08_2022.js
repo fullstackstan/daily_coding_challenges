@@ -28,3 +28,28 @@ function thirt(n) {
 }
 
 thirt(8529)
+
+//////////////////////
+
+
+// 6 kyu
+// Build Tower
+
+function towerBuilder(nFloors) {
+    let starArray=[]
+    for (let i=0;i<(((nFloors-1)*2)+1);i++){
+        starArray.push('*')
+        }
+        starArray.push('\n')
+        let workingArray=[]
+        for (let j=0;j<nFloors;j++){
+        workingArray[j]=starArray.slice()
+        console.log(starArray)
+        console.log(workingArray)
+        }
+    }
+  
+
+  towerBuilder(6)
+
+  ///i give up.  the family awaits.
