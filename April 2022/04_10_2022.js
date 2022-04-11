@@ -20,3 +20,30 @@ function sumDigPow(a, b) {
 
   sumDigPow(1, 10)
   
+
+
+  ////////////////
+
+
+  function to_nato(words) {
+
+	// Go code
+
+  let dictionary= 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, Xray, Yankee, Zulu'
+
+  let dictionaryArray=dictionary.split(', ')
+
+  let wordsArray = []
+
+  for (let i = 0; i<words.length;i++){
+      if(words.toLowerCase().codePointAt(i)>=97 && words.toLowerCase().codePointAt(i)<=122){
+        wordsArray[i]=dictionaryArray[(words.toLowerCase().codePointAt(i)-97)+' ']
+      }else {
+          wordsArray[i]=words.charAt(i)
+      }
+  }return wordsArray.join('')
+
+  }
+
+  to_nato('If you can read')
+  ////////// works but need to do formating
