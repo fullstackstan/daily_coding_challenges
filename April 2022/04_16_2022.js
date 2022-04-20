@@ -17,7 +17,7 @@ function duplicateCount(text){
         if(element>1){    
         counter++
         }
-    }
+    } 
        
     return counter
 
