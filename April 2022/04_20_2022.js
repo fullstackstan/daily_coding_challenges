@@ -6,10 +6,7 @@ function spinWords(string){
           console.log(stringArray[i])
           if(stringArray[i].length>4){
               let wordArray=stringArray[i].split('')
-              let firstLetter = wordArray.shift()
-              let lastLetter = wordArray.pop()
-              wordArray.unshift(lastLetter)
-              wordArray.push(firstLetter)
+              wordArray.reverse()
               console.log(wordArray)
               stringArray[i]=wordArray.join('')
           }
@@ -20,5 +17,3 @@ function spinWords(string){
       //turn array back into string
       return stringArray.join(' ')
     }
-
-    spinWords("Hey fellow warriors")
