@@ -14,3 +14,23 @@ function alphabetPosition(text) {
     
   }
   alphabetPosition("ZZZ")
+
+
+  //////////////
+
+  function order(words){
+    // split words into array
+    words = words.split(' ')
+    
+    //split elment into array
+    let wordArray = []
+    let finalArray = []
+    for(let i=0;i<words.length;i++){
+        wordArray[i]=words[i].split('').sort()
+        finalArray[wordArray[i].shift()-1]=words[i]
+    }
+    console.log(wordArray)
+    console.log(finalArray)
+    return finalArray.join(' ')
+  }
+  order("is2 Thi1s T4est 3a")
