@@ -1,5 +1,7 @@
 function narcissistic(value) {
-    // Code me to return true or false
+   let arrayValue = value.toString().split('')
+   console.log(arrayValue)
+   
   }
   
   narcissistic( 371 )
