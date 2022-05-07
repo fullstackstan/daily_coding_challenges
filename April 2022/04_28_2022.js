@@ -3,7 +3,10 @@ function narcissistic(value) {
    console.log(arrayValue)
    let newArray = arrayValue.map(element=>element**arrayValue.length)
    let sum = newArray.reduce((a,b)=>a+b,0)
-   console.log(sum)
+   if (sum==value){
+      return true
+   } return false
+   
 
   }
   
