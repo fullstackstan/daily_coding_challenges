@@ -27,3 +27,27 @@ function disemvowel(str) {
     
     return finalArray.join('');
   }
+
+//   //6kyu 6 kyu
+// Delete occurrences of an element if it occurs more than n times
+function deleteNth(arr,n){
+    let numberMap = new Map();
+    let finalArray = []
+    //iterate through array 
+    for (let i = 0;i<arr.length;i++){
+        if (numberMap.has(arr[i])){
+            numberMap.set(arr[i],numberMap.get(arr[i])+1)
+        } else {
+            numberMap.set(arr[i],1)
+            console.log(numberMap)
+        }
+        if(numberMap.get(arr[i])<=n){
+            finalArray.push(arr[i])
+        }
+    }
+
+    // if map key value is <= n
+    //push to final array
+    return finalArray
+  }
+  deleteNth([20,37,20,21], 1)
