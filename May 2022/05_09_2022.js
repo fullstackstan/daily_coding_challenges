@@ -51,3 +51,18 @@ function deleteNth(arr,n){
     return finalArray
   }
   deleteNth([20,37,20,21], 1)
+
+
+//   /////
+//   8 kyu
+//   Sum without highest and lowest number
+  function sumArray(array) {
+    if(Array.isArray(array)){
+    array.sort((a,b)=>a-b)
+    array.pop()
+    array.shift()
+    array.reduce((a,b)=>a+b,0)
+    }
+    return array
+}
+sumArray([ 6 ]) 
