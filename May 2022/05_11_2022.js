@@ -38,3 +38,11 @@ function solution (roman) {
   [1000, 100, 1000, 10, 100]
   //iterate through
   //if (arr[i] <arr[i+1]){finalArray.push((arr[i+1]-arr[i]))}
+
+
+  ////////////
+  //bedtime 5kyu 5 kyu
+//Directions Reduction
+function dirReduc(arr){
+    // ...
+  } 
