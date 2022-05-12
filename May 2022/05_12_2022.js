@@ -64,3 +64,43 @@ function pattern(n){
     arrayHolder.pop()
    return arrayHolder.join('');
   }
+
+  //////////
+  function pattern(n){
+ //start with for loop 
+  let arrayHolder=[]
+  for (let i = 1 ; i<n ; i++){
+     //loop n number of times
+  //if n%2==0
+    if (i%2==0){
+      arrayHolder.push(i.toString().repeat(i))
+    }
+    console.log(arrayHolder)
+  //repeat the i , i times
+  //insert \n
+  //pop last element in array
+  }
+ 
+ }
+// pattern(5)7 kyu
+// Complete The Pattern #5 - Even Ladder
+
+  function pattern(n){
+    //start with for loop 
+     let arrayHolder=[]
+     for (let i = 1 ; i<n ; i++){
+        //loop n number of times
+     //if n%2==0
+       if (i%2==0){
+         arrayHolder.push(i.toString().repeat(i))
+         arrayHolder.push('\n')
+       }
+       console.log(arrayHolder)
+     //repeat the i , i times
+     //insert \n
+     //pop last element in array
+     }
+    arrayHolder.pop()
+    return arrayHolder.join('')
+   }
+   pattern(5)
