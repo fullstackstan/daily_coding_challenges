@@ -23,7 +23,7 @@ function getGrade (s1, s2, s3) {
     //finds the average
     let sum = s1+s2+s3
     let average = sum/3
-    //find the letter grade
+    
     if (average>=90){
         return 'A'
     } else if (average>=80&&average<90){
@@ -35,10 +35,32 @@ function getGrade (s1, s2, s3) {
     } else {
         return 'F'
     }
-    //return the letter value
-  }
+    
+}
   
-  parameters 3 inputs
-  return a letter grade
-  examples to the left
-  psuedo
+//   parameters 3 inputs
+//   return a letter grade
+//   examples to the left
+//   psuedo
+
+/////////////
+
+// 7 kyu
+// Number-Star ladder
+
+function pattern(n){
+    let arrayHolder=[]
+    //loop n number of times
+    for(let i=1;i<=n;i++){
+      arrayHolder.push(1)
+      arrayHolder.push('*'.repeat(i-1))
+      if (i>1){
+        arrayHolder.push(i)
+      }
+      arrayHolder.push('\n')
+    }
+    //each loop there need n-1 number of stars
+    //last digit is line number
+    arrayHolder.pop()
+   return arrayHolder.join('');
+  }
