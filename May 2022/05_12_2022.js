@@ -104,3 +104,16 @@ function pattern(n){
     return arrayHolder.join('')
    }
    pattern(5)
+
+   ///////
+
+   function differenceInAges(ages){
+    ages = ages.sort((a,b)=>a-b)
+    let youngest = ages.shift()
+    let oldest = ages.pop()
+    let difference = oldest - youngest
+    return [youngest, oldest, difference]
+  }
+  
+  differenceInAges([82, 15, 6, 38, 35])
+  
