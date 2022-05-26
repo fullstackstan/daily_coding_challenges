@@ -11,3 +11,10 @@ function twoSum(numbersArray, target) {
     //if i+j == target
     //return [i,j]
   }
+
+
+  function boolToWord( bool ){
+    return bool == true ? "Yes" : 'No';
+  }
+
+  
