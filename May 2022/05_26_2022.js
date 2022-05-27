@@ -20,6 +20,8 @@ function roundToNext5(n){
 function whiteBlackAreas(cols, rows) {
   // given two array
   //return sum of white and sum of black
+  let totalArea = cols.reduce((a,b)=>a+b,0)*rows.reduce((a,b)=>a+b,0)
+  console.log(totalArea)
   let whiteSum = 0
   let blackSum = 0
   //loop through cs array i
@@ -29,14 +31,10 @@ function whiteBlackAreas(cols, rows) {
         if(rowCounter%2==0){
           whiteSum += cols[columnCounter]*rows[rowCounter]
         }
-        if(rowCounter%2!=0){
-          blackSum += rows[rowCounter]*cols[columnCounter]
-        }
+       
       }
       if (columnCounter%2!=0){
-        if(rowCounter%2==0){
-          blackSum += cols[columnCounter]*rows[rowCounter]
-        }
+        
         if(rowCounter%2!=0){
           whiteSum += rows[rowCounter]*cols[columnCounter]
         }
@@ -46,5 +44,5 @@ function whiteBlackAreas(cols, rows) {
   //loop through rs array j
   //if j%2==0, white squares are i%2==0, black squares are i%2!=0
   //if j%2!=0,white squares are i%2!=0, black squares are i%2==0
-  return [whiteSum, blackSum]
+  return [whiteSum, totalArea-whiteSum]
 }
