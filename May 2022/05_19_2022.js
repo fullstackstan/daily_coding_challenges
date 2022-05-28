@@ -96,18 +96,28 @@ function positiveSum(arr) {
         let finalArray =[]
         let zerocounter = 0
         //walk backward
+        if (numberArray.length==1){finalArray.push(numberArray[0])}
         for (let i = numberArray.length ; i>1; i--){
             //unshift first number
-            if (zerocounter==0){
+            if (numberArray[i]==0){
+
+            }else if (zerocounter==0){
                 finalArray.unshift(numberArray[i-1])
                 zerocounter++
             }
             if (zerocounter>0){
-                finalArray.unshift((numberArray[i-1])+'0'.repeat(zerocounter))
+                finalArray.unshift((numberArray[i-2])+'0'.repeat(zerocounter))
                 zerocounter++
             }
         }
-        console.log(finalArray.join(' + '))
+        let lastArray = []
+        for (let i=0;i<finalArray.length;i++){
+            if(Number(finalArray[i])==0){
+
+            }else {lastArray.push(finalArray[i])}
+        }
+        
+        return lastArray.join(' + ')
     }
 
     expandedForm(2992)
