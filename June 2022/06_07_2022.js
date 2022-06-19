@@ -32,3 +32,8 @@ for (let j=0;j<k;j++){
   return finalArray
   
 }
+
+
+String.prototype.toJadenCase = function () {
+  
+};
