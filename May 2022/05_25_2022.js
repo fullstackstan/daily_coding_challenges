@@ -21,10 +21,13 @@
 //    return false;
 // }
 
-function howMuchILoveYou(nbPetals) {
-    //create array of words
-    let words = ['', 'I love you', 'a little', 'a lot', 'passionately', 'madly', 'not at all']
-    if (nbPetals<=6){return words[nbPetals]}
- switch (nbPetals%6){
-     case 
- }
+// function howMuchILoveYou(nbPetals) {
+//     //create array of words
+//     let words = ['', 'I love you', 'a little', 'a lot', 'passionately', 'madly', 'not at all']
+//     if (nbPetals<=6){return words[nbPetals]}
+//  switch (nbPetals%6){
+//      case 
+//  }
+
+
+ return 'green' ? 'yellow' ? 'red' ? 'green':'yellow';
