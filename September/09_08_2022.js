@@ -23,3 +23,34 @@ function toCamelCase(str){
     // string to array
     // loop through array 
     // if i = '-', splice i and toUpperCase  next i
+
+
+    //second one
+
+
+    function isPangram(string){
+      // string to uppercase
+      let upperStringArray = string.toUpperCase().split('')
+    // // split string into array
+    // loop trhough codepoints
+      for (let i=65 ; i < 65+26 ; i++){
+        if (!upperStringArray.includes(String.fromCodePoint(i))){
+          return false
+        }
+      }
+      return true
+    // if !strArray.includes(string.fromcodepoint)
+    // return false
+    // if 
+    //   return true
+    }
+    
+    // incoming string
+    // return is boolean
+    // string to uppercase
+    // // split string into array
+    // loop trhough codepoints
+    // if !strArray.includes(string.fromcodepoint)
+    // return false
+    // if 
+    //   return true
