@@ -17,6 +17,7 @@ function meeting(s) {
         console.log(nameArray2[i][1]);
         nameArray2[i]=nameArray2[i].join(',')
     }
+    nameArray2.sort()
     console.log(nameArray2.join(''));
     return nameArray2.join('')
   
