@@ -23,3 +23,12 @@ var encryptThis = function(text) {
     }
     return splitWordArray.join(' ')
   }
+
+  switch (key) {
+    case value:
+        
+        break;
+  
+    default:
+        break;
+  }
