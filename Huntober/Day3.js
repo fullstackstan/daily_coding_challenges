@@ -4,7 +4,7 @@ function removeKeys (str,keys){
 for (let i=0;i<strArray.length;i++){
     for (let j=0;j<keys.length;j++){
         if (strArray[i]===keys[j]){
-            strArray[i]=""
+            strArray[i]=" "
         }
     }
 }
