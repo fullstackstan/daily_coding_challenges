@@ -12,7 +12,7 @@ function puns(str){
 // Total length of pun cannot be a multiple of 5 (this includes spaces and punctuation)
         if (punArray[i].length%5===0){continue}
 // The sum of the charCodes of the 1st and last characters must be odd (my friend's a bit of a character, but she's great once you get to know her)
-        if (punArray[i].charCodeAt(0)+punArray[i].charCodeAt(punArray[i].length-1)%2===0){continue}
+        if ((punArray[i].charCodeAt(0)+punArray[i].charCodeAt(punArray[i].length-1))%2===0){continue}
 // Character directly after the middle of the string may not be 'e' (For example the character to check in even-length string center is t, for odd an example would be weird -> 'r')
         if (punArray[i][Math.floor(punArray[i].length/2)+1]==='e'){continue}
         let lowerCaseCount = 0
