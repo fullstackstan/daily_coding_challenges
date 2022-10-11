@@ -16,4 +16,4 @@ I love friendly competition, so if you want to crush me on the leaderboard, feel
 These challenges are a study tool for me, so you'll likely see a lot of repetition of the same challenge. I do this so that I can practice with different methods, or sometimes just for kicks.
 
 🏅 Current Codewars Stats
-6Kyu! 150 honor
+4Kyu! 1,122 honor
