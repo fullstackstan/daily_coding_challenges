@@ -16,4 +16,4 @@ function removeDecoy(str,count){
     return strArray.join('')
 }
 
-removeDecoy("The LBachyelor^ is ma tehrrib le tpelev!isioOn sh8ow.",5)
+removeDecoy('sfQmg4ly#viO 1h DjVV^P YWLuDM2. A#1t00!wVdEHD dbv 8tll t)vg1!!',3)

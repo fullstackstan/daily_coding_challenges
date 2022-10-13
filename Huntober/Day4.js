@@ -3,5 +3,4 @@ function reverseIt(str){
     return strArray.reverse().join('')
 }
 
-reverseIt(" .dne eht ta ecapsetihw eht hctam t'nseod gnirts siht fo gninnigeb eht ta ecaps etihw ehT   "
-)
+reverseIt('!!1gv)t llt8 vbd DHEdVw!00t1#A .2MDuLWY P^VVjD h1 Oiv#yl4gmQfs')
