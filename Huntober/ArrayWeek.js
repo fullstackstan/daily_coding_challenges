@@ -26,4 +26,20 @@ checkEquality(arr1, arr4)
 // etc.
 
 // ?? Day2
- 
+ function moveLeft(arr,elem){
+    if (arr[0]===elem){return arr}
+    let elemIndex = arr.indexOf(elem)
+    arr.splice(elemIndex-1,0,elem)
+    arr.splice(elemIndex+1,1)
+    return arr
+ }
+ function moveRight(arr, elem){
+    if (arr[arr.length-1]===elem){return arr}
+    let elemIndex = arr.indexOf(elem)
+    arr.splice(elemIndex+2,0,elem)
+    arr.splice(elemIndex,1)
+    return arr
+ }
+
+let myArray = ['abc', 'xyz', 1, 2, 'Hey!']
+moveRight(myArray,'xyz')
