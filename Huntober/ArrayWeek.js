@@ -47,3 +47,33 @@ moveRight(myArray,'xyz')
 
 //Day 3
 
+function moveThingsAround (arr){
+    let finalArray = []
+    // looparray
+    // chekc 
+    for (let i=0;i<arr.length;i++){
+        if (!~arr[i].indexOf('a')&&arr[i].length<4){
+            finalArray.push(arr[i])
+            arr.splice(i,1)
+            i--
+        }
+    }
+    // loop array
+    // check elem length and not a
+    for (let i=0;i<arr.length;i++){
+        if (arr[i].length>3&&!~arr[i].indexOf('a')){
+            finalArray.push(arr[i])
+            arr.splice(i,1)
+            i--
+        }
+    }
+    // loop backward
+    // unshift
+    for(let i=arr.length;i>0;i--){
+        finalArray.unshift(arr[i-1])
+    }
+    return finalArray
+}
+let myArr = ['hi', 'hello', 'howdy', 'hola', 'hej', 'hallo', 'heyyy']
+
+moveThingsAround(myArr)
