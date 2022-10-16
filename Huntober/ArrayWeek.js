@@ -43,3 +43,7 @@ checkEquality(arr1, arr4)
 
 let myArray = ['abc', 'xyz', 1, 2, 'Hey!']
 moveRight(myArray,'xyz')
+
+
+//Day 3
+
