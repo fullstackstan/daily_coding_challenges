@@ -113,9 +113,13 @@ function moveDown(arr,elem){
     if (elemIndex[0]===arr[0].length-1){
         return arr
     }
+    let tempElem = arr[elemIndex[0]+1][elemIndex[1]]
+    arr[elemIndex[0]+1][elemIndex[1]]=elem
+    arr[elemIndex[0]][elemIndex[1]]=tempElem
+    return arr
 }
 
 let myGrid = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']]
 
-moveDown(myGrid,'h')
+moveDown(myGrid,'b')
 // moveUp(moveUp([['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']],'h'),'h')
