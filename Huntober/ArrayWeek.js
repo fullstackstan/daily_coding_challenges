@@ -127,7 +127,7 @@ moveDown(myGrid,'b')
 
 // Day 5 
 
-function moveRandom1st(arr){
+function shuffleArray(arr){
     // loop through array
     for (let i=0;i<arr.length;i++){
         for (let j=0;j<arr[i].length;j++){
@@ -140,5 +140,5 @@ function moveRandom1st(arr){
     }
     return arr
 }
-moveRandom1st([[1,2,3],[4,5,6],[7,8,9]])
+shuffleArray([[1,2,3],[4,5,6],[7,8,9]])
 
