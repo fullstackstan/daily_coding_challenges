@@ -77,3 +77,45 @@ function moveThingsAround (arr){
 let myArr = ['hi', 'hello', 'howdy', 'hola', 'hej', 'hallo', 'heyyy']
 
 moveThingsAround(myArr)
+
+// Day 4
+
+function moveUp(arr,elem){
+    let elemIndex = []
+    // find index of elem
+    for (let i=0;i<arr.length;i++){
+        for (let j=0;j<arr[i].length;j++){
+            if (arr[i][j]===elem){
+                elemIndex[0]=i
+                elemIndex[1]=j
+            }
+        }
+    }
+    if (elemIndex[0]===0){
+        return arr
+    }
+    let tempElem = arr[elemIndex[0]-1][elemIndex[1]]
+    arr[elemIndex[0]-1][elemIndex[1]]=elem
+    arr[elemIndex[0]][elemIndex[1]]=tempElem
+    return arr
+}
+function moveDown(arr,elem){
+    let elemIndex = []
+    // find index of elem
+    for (let i=0;i<arr.length;i++){
+        for (let j=0;j<arr[i].length;j++){
+            if (arr[i][j]===elem){
+                elemIndex[0]=i
+                elemIndex[1]=j
+            }
+        }
+    }
+    if (elemIndex[0]===arr[0].length-1){
+        return arr
+    }
+}
+
+let myGrid = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']]
+
+moveDown(myGrid,'h')
+// moveUp(moveUp([['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']],'h'),'h')
