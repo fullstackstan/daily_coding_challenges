@@ -123,3 +123,21 @@ let myGrid = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']]
 
 moveDown(myGrid,'b')
 // moveUp(moveUp([['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']],'h'),'h')
+
+
+// Day 5 
+
+function moveRandom1st(arr){
+    // loop through array
+    for (let i=0;i<arr.length;i++){
+        for (let j=0;j<arr[i].length;j++){
+            let tempElem = arr[i][j]
+            let randomIndex = [Math.floor(Math.random() * arr.length),Math.floor(Math.random() * arr[i].length)]
+            // console.log(randomIndex);
+            arr[i][j]=arr[randomIndex[0]][randomIndex[1]]
+            arr[randomIndex[0]][randomIndex[1]]=tempElem
+        }
+    }
+    return arr
+}
+moveRandom1st([[1,2,3],[4,5,6],[7,8,9]])
